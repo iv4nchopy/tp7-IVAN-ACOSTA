@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MiRed — Multimedia</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">MiRed ✦</a>
+
+      <button id="navToggle2" class="nav-toggle" aria-label="Abrir menú">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="mainNav2" class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li class="has-sub">
+            <button class="sub-toggle" aria-expanded="false">Social ▾</button>
+            <ul class="sub-menu">
+              <li><a href="social_media.html">Multimedia</a></li>
+              <li><a href="social_comentario.html">Comentarios</a></li>
+              <li><a href="social_noticias.html">Noticias</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <h2 class="page-title">Multimedia</h2>
+
+    <section class="media-grid">
+      <article class="media-card" data-id="media-video-1">
+        <div class="media-preview">
+          <video controls preload="metadata" poster="https://source.unsplash.com/800x450/?video">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+          </video>
+        </div>
+        <h3>Video destacado</h3>
+        <div class="actions">
+          <button class="like-btn" aria-pressed="false">
+            <svg class="icon icon-like" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.35-9-7.27C-1 9 4 4 7 4c1.8 0 3.1.9 4 2 .9-1.1 2.2-2 4-2 3 0 8 5 4 9.73C19 16.65 12 21 12 21z"></path></svg>
+            <span class="like-count">0</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="media-card" data-id="media-image-1">
+        <div class="media-preview">
+          <img src="https://source.unsplash.com/800x450/?portrait" alt="Imagen ejemplo">
+        </div>
+        <h3>Imagen inspiradora</h3>
+        <div class="actions">
+          <button class="like-btn" aria-pressed="false">
+            <svg class="icon icon-like" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.35-9-7.27C-1 9 4 4 7 4c1.8 0 3.1.9 4 2 .9-1.1 2.2-2 4-2 3 0 8 5 4 9.73C19 16.65 12 21 12 21z"></path></svg>
+            <span class="like-count">0</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="media-card" data-id="media-audio-1">
+        <div class="media-preview audio-box">
+          <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+        <h3>Audio sample</h3>
+        <div class="actions">
+          <button class="like-btn" aria-pressed="false">
+            <svg class="icon icon-like" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.35-9-7.27C-1 9 4 4 7 4c1.8 0 3.1.9 4 2 .9-1.1 2.2-2 4-2 3 0 8 5 4 9.73C19 16.65 12 21 12 21z"></path></svg>
+            <span class="like-count">0</span>
+          </button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>TP6 — Nombre del Alumno — © <span id="year2"></span></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
