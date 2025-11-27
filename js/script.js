@@ -11,21 +11,15 @@ document.addEventListener("DOMContentLoaded", () => {
   /* ------------------------------ */
   /*   MENÚ HAMBURGUESA ANIMADO     */
   /* ------------------------------ */
-  function setupNav(toggleId, navId) {
-    const btn = document.getElementById(toggleId);
-    const nav = document.getElementById(navId);
-    if (!btn || !nav) return;
+  const navToggle = document.getElementById('navToggle');
+  const mainNav = document.getElementById('mainNav');
 
-    btn.addEventListener('click', () => {
-      btn.classList.toggle('open'); // animación hamburguesa
-      nav.classList.toggle('open'); // abrir/cerrar nav
+  if(navToggle && mainNav){
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('open'); // animación hamburguesa
+      mainNav.classList.toggle('open'); // abrir/cerrar nav
     });
   }
-
-  setupNav('navToggle','mainNav');
-  setupNav('navToggle2','mainNav2');
-  setupNav('navToggle3','mainNav3');
-  setupNav('navToggle4','mainNav4');
 
   /* ------------------------------ */
   /*   SUBMENÚS                     */
