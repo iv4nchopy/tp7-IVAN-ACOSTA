@@ -126,3 +126,84 @@ body {
 .like-btn span {
   font-weight: bold;
 }
+/* ------------------------------ */
+/*   LOGO IVANCONNECT             */
+/* ------------------------------ */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  animation: fadeIn 0.8s ease;
+}
+
+.logo-icon {
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.18));
+}
+
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.5px;
+}
+
+/* ------------------------------ */
+/*   VARIABLES DE COLOR           */
+/* ------------------------------ */
+:root {
+  --bg: #ffffff;
+  --card: #f2f2f2;
+  --text: #111111;
+  --text-soft: #555;
+  --accent: #4A90E2;
+}
+
+.dark {
+  --bg: #121212;
+  --card: #1e1e1e;
+  --text: #ffffff;
+  --text-soft: #b5b5b5;
+  --accent: #4A90E2;
+}
+
+/* ------------------------------ */
+/*   MODO OSCURO                  */
+/* ------------------------------ */
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dark-toggle {
+  background: var(--card);
+  border: none;
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dark-toggle:hover {
+  background: var(--accent);
+  color: white;
+}
+
+/* ------------------------------ */
+/*   ANIMACIONES APP MÓVIL        */
+/* ------------------------------ */
+@keyframes fadeIn {
+  0% { opacity:0; transform: translateY(8px); }
+  100% { opacity:1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+.card, .post, header {
+  animation: fadeIn 0.5s ease;
+}
