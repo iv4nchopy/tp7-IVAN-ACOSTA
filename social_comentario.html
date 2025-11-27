@@ -1,51 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IvanConnect - Comentarios</title>
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html">IvanConnect</a>
-    <button id="navToggle" class="nav-toggle"><span class="hamburger"></span></button>
-
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <svg width="38" height="38" viewBox="0 0 100 100" class="logo-icon">
+        <circle cx="50" cy="50" r="45" fill="#4A90E2"/>
+        <path d="M30 55 Q50 80 70 55" stroke="white" stroke-width="8" fill="none" stroke-linecap="round"/>
+        <circle cx="50" cy="40" r="10" fill="white"/>
+      </svg>
+      <span class="logo-text">IvanConnect</span>
+    </a>
+    <button id="darkModeToggle" class="dark-toggle">🌙</button>
+    <button id="navToggle" class="nav-toggle" aria-label="Abrir menú">
+      <span class="hamburger"></span>
+    </button>
     <nav id="mainNav" class="nav">
       <ul class="nav-list">
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="social_media.html">Multimedia</a></li>
-        <li><a href="social_noticias.html">Noticias</a></li>
+        <li class="has-sub">
+          <button class="sub-toggle" aria-expanded="false">Social ▾</button>
+          <ul class="sub-menu">
+            <li><a href="social_media.html">Multimedia</a></li>
+            <li><a href="social_comentario.html">Comentarios</a></li>
+            <li><a href="social_noticias.html">Noticias</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
-  </div>
-</header>
+  </header>
 
-<main class="container feed">
-  <h2 class="page-title">Comentarios</h2>
+  <main class="container main">
+    <h2>Comentarios</h2>
 
-  <article class="post">
-    <h3>¿Cuál es tu meta esta semana?</h3>
-    <p>Estoy intentando mejorar mis hábitos diarios. ¿Y ustedes?</p>
-    <button class="like-btn" data-id="c1">❤️ <span>0</span></button>
-  </article>
+    <div class="post" data-id="comentario1">
+      <p>Me encanta esta red social, muy fácil de usar.</p>
+      <button class="like-btn" aria-pressed="false">👍 <span class="like-count">0</span></button>
+    </div>
 
-  <article class="post">
-    <h3>¿Cuál fue tu mejor momento del día?</h3>
-    <p>Hoy pude terminar un proyecto que tenía pendiente. ¡Me siento genial!</p>
-    <button class="like-btn" data-id="c2">❤️ <span>0</span></button>
-  </article>
+    <div class="post" data-id="comentario2">
+      <p>Los videos se ven perfectos en móvil.</p>
+      <button class="like-btn" aria-pressed="false">👍 <span class="like-count">0</span></button>
+    </div>
 
-  <article class="post">
-    <h3>Comparte algo positivo</h3>
-    <p>La vida es mejor cuando agradeces por las pequeñas cosas ✨</p>
-    <button class="like-btn" data-id="c3">❤️ <span>0</span></button>
-  </article>
+    <div class="post" data-id="comentario3">
+      <p>La función de likes persistentes es genial.</p>
+      <button class="like-btn" aria-pressed="false">👍 <span class="like-count">0</span></button>
+    </div>
+  </main>
 
-</main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> IvanConnect</p>
+    </div>
+  </footer>
 
-<script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
 </body>
 </html>
