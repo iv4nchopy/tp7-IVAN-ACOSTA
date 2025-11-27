@@ -3,85 +3,49 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MiRed — Comentarios</title>
+  <title>IvanConnect - Comentarios</title>
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">MiRed ✦</a>
 
-      <button id="navToggle3" class="nav-toggle" aria-label="Abrir menú">
-        <span class="hamburger"></span>
-      </button>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">IvanConnect</a>
+    <button id="navToggle" class="nav-toggle"><span class="hamburger"></span></button>
 
-      <nav id="mainNav3" class="nav">
-        <ul class="nav-list">
-          <li><a href="index.html">Inicio</a></li>
-          <li class="has-sub">
-            <button class="sub-toggle" aria-expanded="false">Social ▾</button>
-            <ul class="sub-menu">
-              <li><a href="social_media.html">Multimedia</a></li>
-              <li><a href="social_comentario.html">Comentarios</a></li>
-              <li><a href="social_noticias.html">Noticias</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <nav id="mainNav" class="nav">
+      <ul class="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="social_media.html">Multimedia</a></li>
+        <li><a href="social_noticias.html">Noticias</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <main class="container main">
-    <h2 class="page-title">Comentarios</h2>
+<main class="container feed">
+  <h2 class="page-title">Comentarios</h2>
 
-    <section class="comment-list">
-      <article class="comment-card" data-id="comment-1">
-        <div class="comment-body">
-          <h4>¿Cuál es tu app favorita y por qué?</h4>
-          <p>Comparte una app que uses todos los días y qué te gusta de ella.</p>
-        </div>
-        <div class="actions">
-          <button class="like-btn" aria-pressed="false">
-            <svg class="icon icon-like" viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9-7.27C-1 9 4 4 7 4c1.8 0 3.1.9 4 2 .9-1.1 2.2-2 4-2 3 0 8 5 4 9.73C19 16.65 12 21 12 21z"/></svg>
-            <span class="like-count">0</span>
-          </button>
-        </div>
-      </article>
+  <article class="post">
+    <h3>¿Cuál es tu meta esta semana?</h3>
+    <p>Estoy intentando mejorar mis hábitos diarios. ¿Y ustedes?</p>
+    <button class="like-btn" data-id="c1">❤️ <span>0</span></button>
+  </article>
 
-      <article class="comment-card" data-id="comment-2">
-        <div class="comment-body">
-          <h4>¿Cine o series?</h4>
-          <p>¿Qué prefieres y por qué? Recomienda algo reciente.</p>
-        </div>
-        <div class="actions">
-          <button class="like-btn" aria-pressed="false">
-            <svg class="icon icon-like" viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9-7.27C-1 9 4 4 7 4c1.8 0 3.1.9 4 2 .9-1.1 2.2-2 4-2 3 0 8 5 4 9.73C19 16.65 12 21 12 21z"/></svg>
-            <span class="like-count">0</span>
-          </button>
-        </div>
-      </article>
+  <article class="post">
+    <h3>¿Cuál fue tu mejor momento del día?</h3>
+    <p>Hoy pude terminar un proyecto que tenía pendiente. ¡Me siento genial!</p>
+    <button class="like-btn" data-id="c2">❤️ <span>0</span></button>
+  </article>
 
-      <article class="comment-card" data-id="comment-3">
-        <div class="comment-body">
-          <h4>Un consejo de estudio</h4>
-          <p>Comparte una técnica de estudio que te haya funcionado.</p>
-        </div>
-        <div class="actions">
-          <button class="like-btn" aria-pressed="false">
-            <svg class="icon icon-like" viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9-7.27C-1 9 4 4 7 4c1.8 0 3.1.9 4 2 .9-1.1 2.2-2 4-2 3 0 8 5 4 9.73C19 16.65 12 21 12 21z"/></svg>
-            <span class="like-count">0</span>
-          </button>
-        </div>
-      </article>
-    </section>
-  </main>
+  <article class="post">
+    <h3>Comparte algo positivo</h3>
+    <p>La vida es mejor cuando agradeces por las pequeñas cosas ✨</p>
+    <button class="like-btn" data-id="c3">❤️ <span>0</span></button>
+  </article>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>TP6 — Nombre del Alumno — © <span id="year3"></span></p>
-    </div>
-  </footer>
+</main>
 
-  <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
