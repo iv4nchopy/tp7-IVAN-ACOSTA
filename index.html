@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Red Social - Inicio</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">MiRed ✦</a>
+
+      <button id="navToggle" class="nav-toggle" aria-label="Abrir menú">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="mainNav" class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li class="has-sub">
+            <button class="sub-toggle" aria-expanded="false">Social ▾</button>
+            <ul class="sub-menu">
+              <li><a href="social_media.html">Multimedia</a></li>
+              <li><a href="social_comentario.html">Comentarios</a></li>
+              <li><a href="social_noticias.html">Noticias</a></li>
+            </ul>
+          </li>
+          <li><a href="#about">Acerca</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section class="hero">
+      <h1>Bienvenido a MiRed</h1>
+      <p>Un sitio de ejemplo tipo red social — responsive, interactivo y listo para GitHub Pages.</p>
+      <div class="cta-row">
+        <a class="btn" href="social_media.html">Ver Multimedia</a>
+        <a class="btn ghost" href="social_comentario.html">Leer Comentarios</a>
+        <a class="btn ghost" href="social_noticias.html">Últimas Noticias</a>
+      </div>
+    </section>
+
+    <section id="about" class="cards">
+      <article class="card">
+        <h3>Diseño adaptable</h3>
+        <p>Menús desplegables y navegación optimizada para móviles.</p>
+      </article>
+      <article class="card">
+        <h3>Interacciones</h3>
+        <p>Likes con contador guardados en tu navegador.</p>
+      </article>
+      <article class="card">
+        <h3>Fácil de editar</h3>
+        <p>Modifica contenidos y recursos multimedia sin complicaciones.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>TP6 — Nombre del Alumno — © <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
