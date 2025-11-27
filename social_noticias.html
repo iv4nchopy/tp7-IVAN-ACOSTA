@@ -7,62 +7,76 @@
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+  <!-- HEADER -->
   <header class="site-header">
-    <a href="index.html" class="logo">
-      <svg width="38" height="38" viewBox="0 0 100 100" class="logo-icon">
-        <circle cx="50" cy="50" r="45" fill="#4A90E2"/>
-        <path d="M30 55 Q50 80 70 55" stroke="white" stroke-width="8" fill="none" stroke-linecap="round"/>
-        <circle cx="50" cy="40" r="10" fill="white"/>
-      </svg>
-      <span class="logo-text">IvanConnect</span>
-    </a>
-    <button id="darkModeToggle" class="dark-toggle">🌙</button>
-    <button id="navToggle" class="nav-toggle" aria-label="Abrir menú">
-      <span class="hamburger"></span>
-    </button>
-    <nav id="mainNav" class="nav">
-      <ul class="nav-list">
-        <li><a href="index.html">Inicio</a></li>
-        <li class="has-sub">
-          <button class="sub-toggle" aria-expanded="false">Social ▾</button>
-          <ul class="sub-menu">
-            <li><a href="social_media.html">Multimedia</a></li>
-            <li><a href="social_comentario.html">Comentarios</a></li>
-            <li><a href="social_noticias.html">Noticias</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+    <div class="header-inner">
+      <a href="index.html" class="brand logo">
+        <svg width="38" height="38" viewBox="0 0 100 100" class="logo-icon">
+          <circle cx="50" cy="50" r="45" fill="#4A90E2"/>
+          <path d="M30 55 Q50 80 70 55" stroke="white" stroke-width="8" fill="none" stroke-linecap="round"/>
+          <circle cx="50" cy="40" r="10" fill="white"/>
+        </svg>
+        <span class="logo-text">IvanConnect</span>
+      </a>
+
+      <!-- BOTÓN MODO OSCURO -->
+      <button id="darkModeToggle" class="dark-toggle">🌙</button>
+
+      <!-- MENÚ MÓVIL -->
+      <button id="navToggle" class="nav-toggle" aria-label="Abrir menú">
+        <span class="hamburger"></span>
+      </button>
+
+      <!-- NAVIGATION -->
+      <nav id="mainNav" class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li class="has-sub">
+            <button class="sub-toggle" aria-expanded="false">Social ▾</button>
+            <ul class="sub-menu">
+              <li><a href="social_media.html">Multimedia</a></li>
+              <li><a href="social_comentario.html">Comentarios</a></li>
+              <li><a href="social_noticias.html">Noticias</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
+  <!-- CONTENIDO PRINCIPAL -->
   <main class="container main">
-    <h2>Noticias</h2>
+    <h2 class="page-title">Últimas Noticias</h2>
 
-    <div class="post" data-id="noticia1">
-      <h4>Tecnología</h4>
-      <p>Se lanza una nueva app de redes sociales innovadora.</p>
-      <button class="like-btn" aria-pressed="false">👍 <span class="like-count">0</span></button>
-    </div>
+    <div class="news-grid">
+      <div class="news-card post" data-id="noticia1">
+        <h4>Tecnología</h4>
+        <p>Se lanza una nueva app de redes sociales innovadora.</p>
+        <button class="like-btn" aria-pressed="false">👍 <span class="like-count">0</span></button>
+      </div>
 
-    <div class="post" data-id="noticia2">
-      <h4>Ciencia</h4>
-      <p>Descubren un exoplaneta que podría ser habitable.</p>
-      <button class="like-btn" aria-pressed="false">👍 <span class="like-count">0</span></button>
-    </div>
+      <div class="news-card post" data-id="noticia2">
+        <h4>Ciencia</h4>
+        <p>Descubren un exoplaneta que podría ser habitable.</p>
+        <button class="like-btn" aria-pressed="false">👍 <span class="like-count">0</span></button>
+      </div>
 
-    <div class="post" data-id="noticia3">
-      <h4>Deportes</h4>
-      <p>Equipo local gana el campeonato nacional de fútbol.</p>
-      <button class="like-btn" aria-pressed="false">👍 <span class="like-count">0</span></button>
+      <div class="news-card post" data-id="noticia3">
+        <h4>Deportes</h4>
+        <p>Equipo local gana el campeonato nacional de fútbol.</p>
+        <button class="like-btn" aria-pressed="false">👍 <span class="like-count">0</span></button>
+      </div>
     </div>
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> IvanConnect</p>
+      <p>© <span id="year"></span> IvanConnect — TAREA 7 IVAN ACOSTA</p>
     </div>
   </footer>
 
+  <!-- JS -->
   <script src="js/script.js" defer></script>
 </body>
 </html>
