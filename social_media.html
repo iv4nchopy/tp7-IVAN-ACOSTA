@@ -1,58 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IvanConnect - Multimedia</title>
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html">IvanConnect</a>
-    <button id="navToggle" class="nav-toggle"><span class="hamburger"></span></button>
-
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <svg width="38" height="38" viewBox="0 0 100 100" class="logo-icon">
+        <circle cx="50" cy="50" r="45" fill="#4A90E2"/>
+        <path d="M30 55 Q50 80 70 55" stroke="white" stroke-width="8" fill="none" stroke-linecap="round"/>
+        <circle cx="50" cy="40" r="10" fill="white"/>
+      </svg>
+      <span class="logo-text">IvanConnect</span>
+    </a>
+    <button id="darkModeToggle" class="dark-toggle">🌙</button>
+    <button id="navToggle" class="nav-toggle" aria-label="Abrir menú">
+      <span class="hamburger"></span>
+    </button>
     <nav id="mainNav" class="nav">
       <ul class="nav-list">
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="social_comentario.html">Comentarios</a></li>
-        <li><a href="social_noticias.html">Noticias</a></li>
+        <li class="has-sub">
+          <button class="sub-toggle" aria-expanded="false">Social ▾</button>
+          <ul class="sub-menu">
+            <li><a href="social_media.html">Multimedia</a></li>
+            <li><a href="social_comentario.html">Comentarios</a></li>
+            <li><a href="social_noticias.html">Noticias</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
-  </div>
-</header>
+  </header>
 
-<main class="container feed">
-  <h2 class="page-title">Multimedia</h2>
+  <main class="container main">
+    <h2>Multimedia</h2>
 
-  <!-- VIDEO -->
-  <article class="post">
-    <h3>Video destacado</h3>
-    <video controls>
-      <source src="https://www.w3schools.com/html/mov_bbb.mp4">
-    </video>
-    <button class="like-btn" data-id="like1">❤️ <span>0</span></button>
-  </article>
+    <div class="post" data-id="video1">
+      <video width="100%" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      </video>
+      <button class="like-btn" aria-pressed="false">👍 <span class="like-count">0</span></button>
+    </div>
 
-  <!-- IMAGEN -->
-  <article class="post">
-    <h3>Imagen del día</h3>
-    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=900" alt="Imagen random">
-    <button class="like-btn" data-id="like2">❤️ <span>0</span></button>
-  </article>
+    <div class="post" data-id="imagen1">
+      <img src="https://www.w3schools.com/w3images/fjords.jpg" alt="Imagen ejemplo" width="100%">
+      <button class="like-btn" aria-pressed="false">👍 <span class="like-count">0</span></button>
+    </div>
 
-  <!-- AUDIO -->
-  <article class="post">
-    <h3>Audio viral</h3>
-    <audio controls>
-      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
-    </audio>
-    <button class="like-btn" data-id="like3">❤️ <span>0</span></button>
-  </article>
+    <div class="post" data-id="audio1">
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+      </audio>
+      <button class="like-btn" aria-pressed="false">👍 <span class="like-count">0</span></button>
+    </div>
+  </main>
 
-</main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> IvanConnect</p>
+    </div>
+  </footer>
 
-<script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
 </body>
 </html>
